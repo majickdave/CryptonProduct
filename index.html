@@ -75,9 +75,7 @@
       background-color: salmon;
   }
   .item {
-    max-width: 300px;
     margin: auto;
-    position: absolute;
   }
   .panel {
       border: 1px solid rgb(20, 186, 164); 
@@ -94,7 +92,11 @@
   }
   .panel-heading {
       color: #fff !important;
-      background-color: rgb(20, 186, 164) !important;
+    background: rgb(20, 186, 164); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, rgb(20, 186, 164), rgba(81, 216, 47,.5)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, rgb(20, 186, 164), rgba(81, 216, 47,.5)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, rgb(20, 186, 164), rgba(81, 216, 47,.5)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(bottom right, rgb(20, 186, 164), rgba(81, 216, 47,.5)); /* Standard syntax */ 
       padding: 25px;
       border-bottom: 1px solid transparent;
       border-top-left-radius: 0px;
@@ -297,24 +299,24 @@ Bitcoin, Ethereum, & Litecoin automatically with as little as $5.</p>
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-      <div class="text-center">
+
         <img class="img-fluid" src="https://www.dropbox.com/s/tup7727l65guf0c/recur.png?raw=1">
-        </div>
+
       </div>
       <div class="item">
-      <div class="text-center">
+
         <img class="img-fluid" src="https://www.dropbox.com/s/tm2jzz6mf4e6xwe/roundup.png?raw=1">
       </div>
-      </div>
+
       <div class="item">
-      <div class="text-center">
+
         <img class="img-fluid" src="https://www.dropbox.com/s/ryp65bqj22emz3y/sell2.png?raw=1">
-      </div>
+
       </div>
       <div class="item">
-      <div class="text-center">
+
         <img class="img-fluid" src="https://www.dropbox.com/s/syqpetbkntkfxpv/sparechange3.png?raw=1">
-      </div>
+
       </div>
     </div>
 
