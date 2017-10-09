@@ -8,10 +8,21 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  <link href="css/" rel="stylesheet" type="text/css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
+
+
   body {
+          background: #ff9284; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#ff9284, #d14d61, rgb(143, 118, 147)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ff9284, #d14d61, rgb(143, 118, 147)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ff9284, #d14d61, rgb(143, 118, 147)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ff9284, #d14d61, rgb(143, 118, 147)); /* Standard syntax */ 
       font: 400 15px Lato, sans-serif;
       line-height: 1.8;
       color: #818181;
@@ -19,25 +30,26 @@
   h2 {
       font-size: 24px;
       text-transform: uppercase;
-      color: #303030;
+      color: #fff;
       font-weight: 600;
       margin-bottom: 30px;
   }
-  h4 {
+  h4, p {
       font-size: 19px;
       line-height: 1.375em;
-      color: #303030;
+      color: #fff;
       font-weight: 400;
       margin-bottom: 30px;
   }  
+  .bitcoin {
+    background-image: url(assets/svg/btc.svg);
+    background-size: contain;
+
+  }
   .jumbotron {
-      background: rgb(20, 186, 164); /* For browsers that do not support gradients */
-	  background: -webkit-linear-gradient(left top, rgb(20, 186, 164), rgba(81, 216, 47,.5)); /* For Safari 5.1 to 6.0 */
-	  background: -o-linear-gradient(bottom right, rgb(20, 186, 164), rgba(81, 216, 47,.5)); /* For Opera 11.1 to 12.0 */
-	  background: -moz-linear-gradient(bottom right, rgb(20, 186, 164), rgba(81, 216, 47,.5)); /* For Firefox 3.6 to 15 */
-	  background: linear-gradient(bottom right, rgb(20, 186, 164), rgba(81, 216, 47,.5)); /* Standard syntax */ 
+      background: transparent; /* For browsers that do not support gradients */
       color: #fff;
-      padding: 100px 25px;
+      padding: 300px 25px;
       font-family: Montserrat, sans-serif;
   }
   .container-fluid {
@@ -47,11 +59,11 @@
       background-color: #f6f6f6;
   }
   .logo-small {
-      color: rgb(20, 186, 164);
+      color: white;
       font-size: 50px;
   }
   .logo {
-      color: rgb(20, 186, 164);
+      color: white;
       font-size: 200px;
   }
   .thumbnail {
@@ -66,19 +78,19 @@
   }
   .carousel-control.right, .carousel-control.left {
       background-image: none;
-      color: salmon;
+      color: #d14d61;
   }
   .carousel-indicators li {
-      border-color: salmon;
+      border-color: #d14d61;
   }
   .carousel-indicators li.active {
-      background-color: salmon;
+      background-color: #d14d61;
   }
   .item {
     margin: auto;
   }
   .panel {
-      border: 1px solid rgb(20, 186, 164); 
+      border: 1px solid rgb(143, 118, 147); 
       border-radius:0 !important;
       transition: box-shadow 0.35s;
   }
@@ -86,17 +98,12 @@
       box-shadow: 5px 0px 40px rgba(0,0,0, .2);
   }
   .panel-footer .btn:hover {
-      border: 1px solid rgb(20, 186, 164);
+      border: 1px solid rgb(143, 118, 147);
       background-color: #fff !important;
-      color: rgb(20, 186, 164);
+      color: rgb(143, 118, 147);
   }
   .panel-heading {
       color: #fff !important;
-    background: rgb(20, 186, 164); /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left top, rgb(20, 186, 164), rgba(81, 216, 47,.5)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, rgb(20, 186, 164), rgba(81, 216, 47,.5)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, rgb(20, 186, 164), rgba(81, 216, 47,.5)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(bottom right, rgb(20, 186, 164), rgba(81, 216, 47,.5)); /* Standard syntax */ 
       padding: 25px;
       border-bottom: 1px solid transparent;
       border-top-left-radius: 0px;
@@ -116,12 +123,16 @@
   }
   .panel-footer .btn {
       margin: 15px 0;
-      background-color: rgb(20, 186, 164);
+      background-color: rgb(143, 118, 147);
       color: #fff;
   }
   .navbar {
       margin-bottom: 0;
-      background-color: rgb(20, 186, 164);
+    background: #ff9284; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #ff9284, #d14d61, rgb(143, 118, 147)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #ff9284, #d14d61, rgb(143, 118, 147)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #ff9284, #d14d61, rgb(143, 118, 147)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(bottom right, #ff9284, #d14d61, rgb(143, 118, 147)); /* Standard syntax */
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
@@ -134,7 +145,7 @@
       color: #fff !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: rgb(20, 186, 164) !important;
+      color: rgb(143, 118, 147) !important;
       background-color: #fff !important;
   }
   .navbar-default .navbar-toggle {
@@ -145,10 +156,24 @@
    .navbar.transparent.navbar-inverse .navbar-inner {
    background: rgba(0,0,0,0.4);
 }
+.glyphicon {
+      font-size: 200px;
+      margin-bottom: 20px;
+}
   footer .glyphicon {
       font-size: 20px;
       margin-bottom: 20px;
-      color: rgb(20, 186, 164);
+      color: rgb(143, 118, 147);
+  }
+
+  footer {
+    background: transparent;
+  }
+
+  footer .textColorful {
+          color: #fff;
+      font-family: Montserrat, sans-serif;
+
   }
   .slideanim {visibility:hidden;}
   .slide {
@@ -205,7 +230,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Crypton</a>
+      <a class="navbar-brand" href="#myPage">CRYPTON</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -216,8 +241,8 @@
 </nav>
 
 <div class="jumbotron text-center">
-  <h1>CRYPTOCURRENCY,
-SIMPLIFED.</h1> 
+  <h1> CRYPTON </h1>
+  <h2>Cryptocurrency, Simplified.</h2> 
   <p>Effortlessly acquire digital currencies like
 Bitcoin, Ethereum, & Litecoin automatically with as little as $5.</p> 
   <form>
@@ -230,34 +255,48 @@ Bitcoin, Ethereum, & Litecoin automatically with as little as $5.</p>
   </form>
 </div>
 
-<!-- Container (About Section) -->
-<div id="about" class="container-fluid">
+<!-- Container (User) -->
+<div id="creditcard" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
-      <h2>What is Crypton building?</h2><br>
-      <h4>CRYPTON offers multiple ways to acquire digital currency on your own terms. And a plethora of learning resources and trending news updates to help users familiarize themselves with current digital currency news and technology.</h4><br>
+      <h2>Securley link your existing bank account</h2><br>
+      <h4>CRYPTON allows its users to link any U.S. checking account using your debit card.</h4><br>
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-signal logo"></span>
+        <i class="fa fa-credit-card-alt logo slideanim" aria-hidden="true"></i>
     </div>
   </div>
 </div>
+<br>
 
-<div class="container-fluid bg-grey">
+<div id="bank" class="container-fluid">
   <div class="row">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+      <i class="fa fa-university logo slideanim" aria-hidden="true"></i>
     </div>
     <div class="col-sm-8">
-      <h2>Our Values</h2><br>
-      <h4><strong>MISSION:</strong> Our mission is to provide the best crypto-investing advice on the planet.</h4><br>
-      <p><strong>VISION:</strong> We see cryptocurrency as an investment that the entire world should be able to access.</p>
+      <h2>Open an account with a major exchange</h2><br>
+      <h4>Create and manage your digital wallet through CRYPTON.</h4>
     </div>
   </div>
 </div>
+<br>
+
+<div id="bitcoin" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Convert Spare Change into Bitcoin, Ethereum, or Litecoin</h2><br>
+      <h4>Crypton rounds your transactions to the nearest dollar, depositing them into the account of your choice</h4><br>
+    </div>
+    <div class="col-sm-4">
+        <span class="glyphicon glyphicon-bitcoin logo slideanim"></span>
+    </div>
+  </div>
+</div>
+<br>
 
 <!-- Container (Team Section) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
+<div id="portfolio" class="container-fluid text-center">
   <h2>The Team</h2><br>
   <div class="row text-center slideanim">
   

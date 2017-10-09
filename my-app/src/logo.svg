@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 841.9 595.3">
+  <defs>
+    <linearGradient id="Gradient1">
+      <stop class="stop1" offset="0%"/>
+      <stop class="stop2" offset="50%"/>
+      <stop class="stop3" offset="100%"/>
+    </linearGradient>
+    <linearGradient id="Gradient2" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#20f7c8"/>
+      <stop offset="100%" stop-color="#f71853"/>
+    </linearGradient>
+    <style type="text/css"><![CDATA[
+      #rect1 { fill: url(#Gradient1); }
+      .stop1 { stop-color: #ff0cf2; }
+      .stop2 { stop-color: #18e8f7; stop-opacity: 0; }
+      .stop3 { stop-color: #f7f718; }
+    ]]></style>
+</defs>
+    <g fill="url(#Gradient2)">
+        <circle id="url(#Gradient2)" cx="420.9" cy="296.5" r="150"/>
+        <path d="M520.5 78.1z"/>
+    </g>
+</svg>
